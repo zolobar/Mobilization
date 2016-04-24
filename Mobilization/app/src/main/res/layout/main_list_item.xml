@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Корневой лэйаут с элементами расположенными горизонтально -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/general_layout_main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Маленькое изображение артиста -->
+    <ImageView
+        android:id="@+id/small_image_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left" />
+
+    <!-- Лэйаут с вертикальным расположением элементов для тектсовых полей описания артиста -->
+    <LinearLayout
+        android:id="@+id/text_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+
+        <!-- Название артиста -->
+        <TextView
+            android:id="@+id/text_name_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="0dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:singleLine="false">
+        </TextView>
+
+        <!-- Жанры -->
+        <TextView
+            android:id="@+id/text_genres_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textSize="15sp">
+        </TextView>
+
+        <!-- Количество альбомов -->
+        <TextView
+            android:id="@+id/text_albums_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textSize="15sp">
+        </TextView>
+
+        <!-- Количество трэков -->
+        <TextView
+            android:id="@+id/text_tracks_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textSize="15sp">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
