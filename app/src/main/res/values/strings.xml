@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mobilization</string>
+    <string name="biography_lable_text">Биография:</string>
+    <string name="action_bar_back">Назад</string>
+</resources>
